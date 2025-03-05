@@ -10,7 +10,7 @@
     <div class="container">
         <header class="header">
             <h1>Game Client Programmer</h1>            
-            <p> 황주현 
+            <p> Hwang-Juhyun 
             <div class="contact">
                 <a href="hyunhwang091@naver.com">📧 hyunhwang091@naver.com</a>
                 <a href="https://github.com/Hwang-Ju-Hyun">👾 GitHub</a>
@@ -30,9 +30,9 @@
                 <div class="technical-details">
                     <h4>Implementation</h4>
                     <ul>
-                        <li>몬스터 AI 시스템 설계 및 구현</li>
-                        <li>실감 나는 게임 환경 조성을 위한 안개, 공기 흐름 효과 구현 및 몬스터 애니메이션 상태 머신 개발</li>
-                        <li>레벨 디자인 및 맵 제작</li>
+                        <li>Implement Monster AI System</li>
+                        <li>Developed the surrounding environment, including effects such as fog and ambient air flow, and worked on the Monster animation state machine.</li>
+                        <li>Map design</li>
                     </ul>
                 </div>
             </div>
@@ -46,10 +46,10 @@
                 <div class="technical-details">
                     <h4>Implementation</h4>
                     <ul>
-                        <li>게임 프레임워크 아키텍처 설계 및 개발</li>
-                        <li>보스 몬스터 AI 개발 (최단 경로 탐색 알고리즘, 상태 머신 기반 행동 제어 시스템 구현)</li>
-                        <li>레벨 디자인 및 맵 제작</li>
-                        <li>게임 내 튜토리얼 시스템 설계 및 구현</li>
+                        <li>Developed Gameframework</li>
+                        <li>Developed BossMonster AI (Shortest Path Finding Algorithm, State Machine)</li>
+                        <li>Map Design</li>
+                        <li>Developed Tutorial</li>
                     </ul>
                 </div>
             </div>
@@ -63,9 +63,9 @@
                 <div class="technical-details">
                     <h4>Implementation</h4>
                     <ul>
-                        <li>OpenGL을 활용하여 2D 보머맨 스타일 게임 엔진 설계 및 구현</li>
-                        <li>DearImGui 및 JSON을 활용한 맵 에디터 및 저장/불러오기 시스템 개발</li>
-                        <li>2인 플레이어 시스템 구축</li>
+                        <li>Used OpenGL and recreated a 2D BomberMan-style game</li>
+                        <li>Developed a Map Editor and Save and Load System by using DearImGui and JSON</li>
+                        <li>Developed 2P Player System</li>
                     </ul>
                 </div>
             </div>
@@ -83,8 +83,8 @@
                 <div class="technical-details">
                     <h4>Implementation</h4>
                     <ul>
-                        <li>3D 렌더링 파이프라인의 기본 개념 및 그래픽스 기법을 학습하고, 변환, 셰이딩, 조명 모델을 적용하여 3D 오브젝트를 생성 및 조작</li>
-						<li>OpenGL을 활용하여 그래픽 렌더링을 최적화하고, 다양한 렌더링 기법을 실습하여 실시간 그래픽스 개발 역량 강화</li>                        
+                        <li>Learned 3D graphics by studying rendering techniques, working with transformations, shading, and lighting to create and manipulate 3D 
+models. Also gained a solid understanding of the rendering pipeline</li>                        
                     </ul>
                 </div>
             </div>
@@ -113,8 +113,8 @@
             <h2>Education</h2>
             <div class="education-card">
                 <h3>Computer Science and Engineering</h3>
-                <p>국립부경대학교</p>
-                <p>부산 디지펜 아카데미</p>
+                <p>Pukyong National University</p>
+                <p>Digipen Busan Academy</p>
             </div>
         </section>
     </div> <!-- container div 종료 -->
