@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample post
+title: Wothingthing
 tags: [A Tag, Katex]
 last_modified: "2025-05-30"
 excerpt_separator: <!--more-->

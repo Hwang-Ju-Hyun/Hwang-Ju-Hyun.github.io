@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tech Stuff example
+title: Gonjiamerica
 color: rgb(250, 50, 50)
-feature-img: "assets/img/feature-img/circuit.jpeg"
-thumbnail: "assets/img/thumbnails/feature-img/circuit.jpeg"
+feature-img: "assets/img/feature-img/g.jpeg"
+thumbnail: "assets/img/thumbnails/feature-img/g.jpeg"
 tags: [Highlight, Markdown]
 ---
 
