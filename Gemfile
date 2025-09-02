@@ -4,6 +4,8 @@ source "https://rubygems.org"
 gem 'webrick'
 gem 'kramdown-parser-gfm'
 
+gem "jekyll-seo-tag", "~> 2.8"
+
 # For github pages compatibility
 # gem 'github-pages', group: :jekyll_plugins
 gemspec
