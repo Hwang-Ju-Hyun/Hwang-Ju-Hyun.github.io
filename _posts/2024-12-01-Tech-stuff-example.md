@@ -7,10 +7,24 @@ thumbnail: "assets/img/thumbnails/feature-img/g.jpeg"
 tags: [Highlight, Markdown]
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Gonjiamerica Demo" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+Gonjiamerica는 1인칭 FPS공포게임입니다.
+## 본인 역할
+* 몬스터 AI 시스템 설계 및 구현
+* 실감 나는 게임 환경 조성을 위한 안개, 공기 흐름 효과 구현 및 몬스터 애니메이션 상태 머신 구현
+* 레벨 디자인 및 맵 제작
 Let's demo some code snippet, with some mermaid diagrams.
 Because if you put some code in your blog, you would at least make it:
 1. Searchable
 2. Good-looking
+
+<div style="border: 2px solid #fa3232; padding: 10px; border-radius: 8px; background-color: #fff5f5;">
+  <strong>👥 팀 구성:</strong> 총 4명 (프로그래머 2명, 디자이너 1명, 기획자 1명)
+</div>
 
 ## Search on code
 
