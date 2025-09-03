@@ -5,12 +5,14 @@ url: "https://Hwang-Ju-Hyun.github.io"
 # THEME-SPECIFIC CONFIGURATION
 title: 황주현                                    # site's title
 description: "A website with blog posts and pages"      # used by search engines
-avatar: /assets/img/triangle.png                         # Empty for no avatar in navbar
+avatar: /assets/img/me.jpg                         # Empty for no avatar in navbar
 favicon: /assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Game Programmer  # Change Blog header text
-header_feature_image: assets/img/header/triangular.jpeg
+header_text: "Game Programming Portfolio"
+header_subtitle: "황주현"
+header_intro: "안녕하세요, 게임 프로그래머 황주현입니다. 3D/2D 혼합 환경의 엔진을 직접 제작하며 프로젝트를 진행하고 있습니다."
+header_feature_image: /assets/img/header/me.jpg
 header_feature_image_responsive: true
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>

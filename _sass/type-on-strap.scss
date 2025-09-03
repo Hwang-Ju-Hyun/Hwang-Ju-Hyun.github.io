@@ -17,6 +17,7 @@
 @import 'base/global';
 @import 'base/highlight';
 @import 'base/utility';
+@import 'base/custom';
 
 /* Includes */
 // Linked with the html in the _includes folder
@@ -38,6 +39,8 @@
 @import 'layouts/tags';
 @import 'layouts/search';
 
+/* custom */
+@import 'custom';
 /**
 
 CUSTOM STYLING
