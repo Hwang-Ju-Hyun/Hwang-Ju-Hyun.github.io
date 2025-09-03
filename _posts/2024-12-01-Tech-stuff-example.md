@@ -6,23 +6,23 @@ feature-img: "assets/img/feature-img/g.jpeg"
 thumbnail: "assets/img/thumbnails/feature-img/g.jpeg"
 tags: [Highlight, Markdown]
 ---
-
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
     <h3>About</h3>
     <p>
       <strong>Gonjiamerica</strong>는 팀 프로젝트로 진행된 1인칭 공포 FPS 게임입니다.<br>
-      본 프로젝트를 통해 <strong>언리얼 엔진</strong>을 처음 접했고, 빠른 프로토타이핑과 학습을 위해
+      본 프로젝트를 통해 처음으로 <strong>언리얼 엔진</strong>을 접했고, 
       <strong>블루프린트</strong>를 활용하여 게임을 구현했습니다.<br>
-      이를 통해 게임 엔진의 기초 개념부터 AI 시스템, 애니메이션 및 내비게이션 시스템까지 
-      실제로 경험하고 적용할 수 있었습니다.
+      이 경험을 통해 게임 엔진의 작동 원리와, AI/애니메이션/내비게이션 같은 핵심 시스템을 직접 설계하고 응용할 수 있었습니다.<br>
+      비록 처음 다뤄보는 엔진이었지만, 빠른 학습과 적용을 통해 
+      실제 게임 제작 프로세스를 경험하고 전문성을 넓힐 수 있었습니다.
     </p>
   </div>
 
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
     <h3>Project Info</h3>
     <ul>
-      <li><strong>Role:</strong> AI & Gameplay Programmer</li>
+      <li><strong>Role:</strong> AI & Gameplay Programmer / Team Leader</li>
       <li><strong>Team Size:</strong> 4명 (프로그래머 3명)</li>
       <li><strong>Time Frame:</strong> 3개월</li>
       <li><strong>Engine:</strong> Unreal Engine (Blueprint)</li>
@@ -38,212 +38,131 @@ tags: [Highlight, Markdown]
 ---
 
 ## Introduction
-이 프로젝트는 제가 언리얼 엔진을 처음 다뤄본 경험이자, 게임 엔진의 다양한 기능을 체험할 수 있었던 소중한 기회였습니다.  
-특히 블루프린트를 중심으로 개발하며 빠른 프로토타이핑이 가능했고, 게임 엔진의 기초 메커니즘을 익히는 데 큰 도움이 되었습니다.  
+이 프로젝트는 제가 게임 엔진이라는 것을 처음 다뤄본 경험이자,  
+3D 게임 개발의 전체적인 워크플로우를 직접 체험할 수 있었던 소중한 기회였습니다.  
 
-이를 통해 단순히 기능 구현에 그치지 않고, **AI 설계, 내비게이션 시스템, 애니메이션 전환**까지 직접 경험하며 게임 프로그래밍의 주요 영역을 폭넓게 학습할 수 있었습니다.  
+특히 언리얼 엔진의 블루프린트를 활용하여 빠르게 프로토타이핑하고,  
+**AI, 애니메이션, 내비게이션 시스템** 같은 기능들을 직접 다뤄보며  
+게임 엔진이 제공하는 강력한 툴셋의 가치를 몸소 느낄 수 있었습니다.  
 
 ---
 
 ## My Contributions
 - **AI 시스템 구현**  
   - **Behavior Tree**를 활용하여 몬스터의 탐색, 추적, 공격 등의 행동 로직을 설계 및 구현  
-  - 다양한 상황에서 유연하게 반응할 수 있도록 태스크와 데코레이터를 구조화  
+  - 태스크(Task)와 데코레이터(Decorator)를 모듈화하여 확장성과 유지보수성을 높임  
 
 - **네비게이션 시스템 (Nav Mesh)**  
-  - 몬스터가 장애물을 회피하며 플레이어를 추적할 수 있도록 Nav Mesh 적용  
-  - 동적으로 이동 가능한 경로를 학습하고 테스트하면서 내비게이션의 원리를 이해  
+  - 몬스터가 장애물을 회피하며 플레이어를 추적할 수 있도록 **Nav Mesh 기반 경로 탐색** 적용  
+  - 동적 맵 환경에서도 경로를 효율적으로 탐색할 수 있도록 실험하며 원리 이해  
 
 - **애니메이션 상태 머신 (Animation State Machine)**  
-  - 몬스터의 이동, 공격, 피격 등 상황별 애니메이션 전환을 구현  
-  - 자연스러운 상태 전환과 게임플레이 몰입도를 높이는 애니메이션 제어 경험  
+  - 이동, 공격, 피격 등 상황별 애니메이션을 설계하고 전환 로직 구현  
+  - **애니메이션 블루프린트와 몽타주(Montage) 시스템**을 처음 접하며 학습  
 
-- **환경 효과**  
+- **환경 효과 구현**  
   - 안개, 공기 흐름 등 분위기 연출 요소를 추가하여 공포감을 강화  
 
 ---
 
 ## Why Behavior Tree?
+AI 설계 시 처음에는 단순한 **Finite State Machine(FSM)** 구조를 고려했으나,  
+몬스터의 행동이 복잡해지면서 FSM은 다음과 같은 문제를 드러냈습니다:
 
-AI를 설계할 때 처음에는 단순한 **Finite State Machine(FSM)** 구조를 고려했습니다.  
-FSM은 구현이 간단하고 직관적이며, 적은 수의 상태에서는 빠르게 동작한다는 장점이 있습니다.  
-하지만 몬스터의 **탐색 → 추적 → 공격 → 피격 → 재탐색** 등 복잡한 행동 패턴을 점차 추가하면서 몇 가지 한계가 드러났습니다:
+- 상태와 전환 조건이 늘어날수록 **코드 복잡성 증가**  
+- 행동 재사용의 어려움 → **중복 코드 발생**  
+- 새로운 행동 추가 시 기존 구조 전체를 수정해야 하는 **확장성 부족**
 
-- **상태 폭발 문제**: 상태와 전환 조건이 늘어날수록 코드 복잡도가 기하급수적으로 증가  
-- **재사용성 부족**: 특정 행동 로직이 여러 상태에서 필요할 경우, 중복 코드가 발생  
-- **확장성 제약**: 새로운 행동을 추가하려면 기존 상태 전환 로직을 전부 수정해야 하는 비효율성  
+이에 따라, 저는 **Behavior Tree(BT)**를 선택했습니다.  
+BT는 FSM에 비해 다음과 같은 장점을 가집니다:
 
-이러한 이유로, 저는 **Behavior Tree(BT)** 기반의 구조를 선택했습니다.  
-BT는 FSM에 비해 다음과 같은 강점을 가집니다:
+- **모듈화**: 행동 단위를 태스크로 분리해 재사용 가능  
+- **유연성**: 새로운 행동을 추가할 때 기존 트리에 큰 영향을 주지 않음  
+- **가독성**: 트리 구조를 통해 전체 로직을 한눈에 파악 가능  
 
-- **모듈화된 구조**: 태스크(Task) 단위로 행동을 정의할 수 있어, 중복 없이 재사용 가능  
-- **유연한 확장성**: 새로운 행동을 추가할 때 기존 트리를 크게 수정할 필요가 없음  
-- **조건 기반 제어**: 데코레이터(Decorator)와 서비스(Service)를 통해 상황별 의사결정 가능  
-- **가독성 향상**: 트리 형태로 시각화되어, 협업 시 AI 로직을 쉽게 이해하고 디버깅 가능  
+결과적으로, Behavior Tree를 도입해 **확장성과 유지보수성을 확보**하고,  
+자연스럽게 플레이어에게 반응하는 AI를 만들 수 있었습니다.  
 
-결과적으로, **Behavior Tree를 사용함으로써 FSM의 복잡도를 줄이고 유지보수성·확장성을 확보**할 수 있었으며, 실제로 프로젝트의 몬스터 AI가 보다 자연스럽고 유연하게 플레이어에게 반응하도록 구현할 수 있었습니다.
+---
+## 어려웠던 점과 해결 방안
 
-## Search on code
+애니메이션 구현 과정에서 가장 어려웠던 부분은 **애니메이션 몽타주(Animation Montage)**의 활용이었습니다.  
+몽타주는 특정 상황(예: 공격, 피격, 리로드 등)에서 애니메이션 블루프린트의 일반 상태 머신(State Machine)을 **일시적으로 덮어쓰고 우선 실행되는 시퀀스 애니메이션**입니다.
 
-Search should be working even for complicated escape symbols.
+프로젝트 초반에는 이 개념을 제대로 이해하지 못해 다음과 같은 문제가 발생했습니다:
 
-```bash
-sed -i 's/\"hostname\"\:.*$/\"hostname\"\: \"'$IPADDR'\"\,/g' open-falcon/agent/config/cfg.json
-```
+- 공격 도중 이동 애니메이션이 끊김  
+- 피격 모션이 끝나기 전에 상태 전환 발생  
+- 불필요한 애니메이션 충돌 빈번  
 
-Or try searching for partial of a command, like this article should be returned when looking for "find grep"
+이를 해결하기 위해 다음과 같은 접근을 시도했습니다:
 
-```bash
-find /etc -type f -exec cat '{}' \; | tr -c '.[:digit:]' '\n' | grep '^[^.][^.]*\.[^.][^.]*\.[^.][^.]*\.[^.][^.]*$'
-```
+**1. 분석**  
+- 몽타주가 **State Machine과 어떻게 상호작용**하는지 엔진 문서등을 통해 구조적으로 파악  
 
-## Code highlighting examples
+**2. 테스트 씬 구축**
+- 별도의 테스트 환경에서 **공격, 피격, 대기** 같은 핵심 몽타주 반복 실행  
+- 전환 조건 디버깅  
 
-Because you might put code in your blog post, and you want to make sure it will look good in here. Plus that the search
-function will still be working!
+**3. 세분화된 조건 제어**  
+- **애니메이션 노티파이(Anim Notify)** 활용 → 타이밍 세밀하게 조정  
+- 블루프린트 이벤트 그래프에서 **상태 플래그 관리**  
 
-### XML
+**4. 피드백 기반 개선**
+- 강사와 멘토의 피드백 반영    
+- 자연스러운 전환 가능하도록 최적화  
 
-Example from [W3C]
-```xml
-<part number="1976">
-  <name>Windscreen Wiper</name>
-  <description>The Windscreen wiper
-    automatically removes rain
-    from your windscreen, if it
-    should happen to splash there.
-    It has a rubber <ref part="1977">blade</ref>
-    which can be ordered separately
-    if you need to replace it.
-  </description>
-</part>
-```
+이 과정을 통해 단순히 몽타주를 “사용”하는 수준을 넘어,  
+**몽타주와 상태 머신을 병행하여 상황별로 유연하고 자연스러운 애니메이션 흐름**을 구현하는 방법을 익힐 수 있었습니다.
 
-### Java
+---
 
-java example
+## What I Learned & Teamwork  
 
-```java
-import java.util.*;
+- **게임 엔진의 핵심 기능 체험**  
+  - Behavior Tree, Animation State Machine, Nav Mesh 등 **AI 및 게임플레이 핵심 시스템**을 직접 경험  
+  - 단순 사용을 넘어, 각 기능의 원리와 게임플레이에 미치는 영향을 이해  
 
-@Example
-public class Demo {
-  private static final String CONSTANT = "String";
-  private Object o;
-  /**
-   * Creates a new demo.
-   * @param o The object to demonstrate.
-   */
-  public Demo(Object o) {
-    this.o = o !== null ? o : new Object();
-    String s = CONSTANT + "Other example of text";
-    int i = 123 - 33 % 11;
-  }
-  public static void main(String[] args) {
-    Demo demo = new Demo();
-    System.out.println(demo.o.toString())
-  }
-}
-```
-
-### Javascript
-
-```javascript
-/**
- * Does a thing
- */
-function helloWorld(param1, param2) {
-    const example = `hello ${param1}`
-    var something = {
-        key: "value",
-        number: 1
-    };
-
-    // Do something
-    if (2.0 % 2 == something) {
-        console.log('Hello, world!');
-    } else {
-        return null;
-    }
-
-    // TODO comment
-}
-```
-
-### JSON
-
-```json
-{
-  "animals": {
-    "tiger": {
-      "name": "tiger",
-      "images": ["🐯", "🐅", "⻁"]
-    },
-    "turtle": {
-      "age": 126,
-      "image": "🐢"
-    },
-    "unicorn": {
-      "doesExist": true,
-      "image": "🦄"
-    }
-  }
-}
-```
-
-### Python
-
-```python
-import os
+- **성장 방향성 인식**  
+  - 언리얼 엔진의 편리한 기능들 덕분에 "이 기능을 직접 만들어보고 싶다"는 동기 부여를 얻음  
+  - 단순 활용을 넘어 시스템의 내부 구조와 원리를 분석하는 데 관심을 가지게 됨  
 
 
-def some_function(param_one="", param_two=0):
-    r'''A docstring'''
-    if param_one > param_two:  # interesting
-        print("Greater")
-    return (param_two - param_one + 1 + 0b10) or None
+협업 과정에서도 도전이 있었습니다.  
+초반에는 서로 바라는 점이 다르고, 각자의 업무에만 집중하다 보니  
+팀워크가 원활하지 않았고 목표가 불명확해지는 문제가 있었습니다.  
+
+팀장으로서 저는 이를 해결하기 위해:  
+- 정기적으로 **팀 회의**를 열어 각자의 진행 상황과 목표를 공유  
+- **질문과 답변 시간**을 마련하여 서로의 의도를 명확히 이해  
+- 긍정적이고 개방적인 태도로 소통하며, **동료의 전문성을 존중**  
+
+이를 통해 팀원들이 각자의 역할에 몰입하면서도,  
+**공통의 팀 목표**를 향해 협력할 수 있는 분위기를 조성할 수 있었습니다.  
+
+이 경험은 단순한 기술적 성과를 넘어,  
+**게임 개발에서 협업과 리더십의 중요성**을 깊이 깨닫는 계기가 되었습니다.  
+
+---
+
+## 느낀 점
+
+이 게임은 **부산정보산업진흥원 전시용 작품**으로 선정되어 실제 BIC 전시에도 참가하게 되었습니다.  
+개발 당시에는 주로 **기능 구현 자체**에 초점을 맞추어 빠르게 프로토타입을 완성하는 데 집중했기 때문에, 전시 준비 과정에서 코드를 다시 살펴보며 **난잡한 구조와 구현 목적에 치중된 코드**가 곳곳에 존재한다는 것을 깨달았습니다.  
+
+이를 통해 다음과 같은 점들을 느낄 수 있었습니다.
+
+- **초기 구현 vs. 장기적 유지보수**: 프로젝트 초반에는 기능 구현에 집중하는 것이 필요하지만, 프로젝트가 성장하고 작품으로서 완성도를 높일 때는 **유지보수가 용이하고 확장성이 높은 코드**의 중요성이 더욱 커진다는 점을 체감했습니다.  
 
 
-class SomeClass:
-    """ dunno what I am doing """
+- **재사용성과 설계의 가치**: 단순히 동작하는 코드만 만드는 것이 아니라, **재사용 가능하고 구조화된 설계**가 프로젝트 완성도와 팀의 효율성에 큰 영향을 준다는 것을 실감했습니다.  
 
-    def __init__(self):
-        pass
-```
 
-### YAML
+- **프로세스 개선과 성찰**: 초기에는 ‘어떻게든 구현’에 몰두했지만, 이번 경험을 통해 **코드 품질과 설계를 함께 고려하며 개발하는 습관**이 프로젝트의 장기적 성공과 유지보수에 필수적임을 배웠습니다.  
 
-You can also render some yaml, like this `_config.yml`:
+결국, 이번 프로젝트는 단순히 기술을 배우는 것을 넘어, **실제 전시 작품으로서 완성도를 높이는 과정에서 코드 구조와 시스템 설계의 중요성**을 직접 체험할 수 있는 소중한 기회였습니다.
 
-```yml
-
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# This file, "_config.yml" is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-# SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
-
-# THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
-
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
-```
+---
 
 [W3C]: https://www.w3.org/standards/xml/core
+
