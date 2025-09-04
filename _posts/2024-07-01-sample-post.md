@@ -2,8 +2,35 @@
 layout: post
 title: Wothingthing
 tags: [A Tag, Katex]
-last_modified: "2025-05-30"
+feature-img: "assets/img/feature-img/wothingthing.png"
+thumbnail: "assets/img/thumbnails/feature-img/wothingthing.png"
 excerpt_separator: <!--more-->
+---
+
+<div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+  <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
+    <h3>About</h3>
+    <p>
+      <strong>Wothingthing</strong>은 팀 프로젝트로 진행된 2D 횡스크롤 게임입니다.<br>
+      본 프로젝트는 <strong>Alpha Engine</strong>이라는 <strong>2D렌더링 툴</strong>을 활용하여 게임을 구현했습니다.<br>
+      이 경험을 통해 처음으로 팀과 협업하며 게임을 만들어보았습니다. 
+	  <br>이 경험을 통해 팀과 협업할 시 서로의 의견을 조율해가는 능력을 기룰 수 있었고
+	  또한,게임 내 2D 캐릭터 애니메이션 처리 과정, 충돌 처리, 컴포넌트 시스템 기능을 구현하며 문제 해결 능력을 기를 수 있었습니다.
+	  <br>      
+    </p>
+  </div>
+
+  <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
+    <h3>Project Info</h3>
+    <ul>
+      <li><strong>Role:</strong> Boss AI, GameFrameWork 구축,<br>LevelDesign / Team Leader</li><br>
+      <li><strong>Team Size:</strong> 3명 (프로그래머 3명)</li><br>
+      <li><strong>Time Frame:</strong> 1개월</li><br>
+      <li><strong>Engine:</strong> Alpha Engine(Rendering Tool)</li>
+    </ul>
+  </div>
+</div>
+
 ---
 
 Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 

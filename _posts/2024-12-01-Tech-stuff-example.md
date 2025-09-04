@@ -23,7 +23,7 @@ tags: [Highlight, Markdown]
     <h3>Project Info</h3>
     <ul>
       <li><strong>Role:</strong> AI & Gameplay Programmer / Team Leader</li>
-      <li><strong>Team Size:</strong> 4명 (프로그래머 3명)</li>
+      <li><strong>Team Size:</strong> 3명 (프로그래머 3명)</li>
       <li><strong>Time Frame:</strong> 3개월</li>
       <li><strong>Engine:</strong> Unreal Engine (Blueprint)</li>
     </ul>

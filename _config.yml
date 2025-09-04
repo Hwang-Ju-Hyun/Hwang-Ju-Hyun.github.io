@@ -11,7 +11,7 @@ favicon: /assets/favicon.ico                             # Icon displayed in the
 # Header and footer text
 header_text: "Game Programming Portfolio"
 header_subtitle: "황주현"
-header_intro: "안녕하세요, 게임 프로그래머 황주현입니다. 3D/2D 혼합 환경의 엔진을 직접 제작하며 프로젝트를 진행하고 있습니다."
+header_intro: ""
 header_feature_image: /assets/img/header/me.jpg
 header_feature_image_responsive: true
 footer_text: >
