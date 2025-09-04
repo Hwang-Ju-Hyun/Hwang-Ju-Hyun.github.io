@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About & Experience
 permalink: /about/
 feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
@@ -17,10 +17,10 @@ tags: [Page]
 코드를 작성하는 것 이상의 책임감과 세심함, 유저 경험등등을 고려한 판단이 필요하다는 것을 깨달았고, 
 이러한 경험은 앞으로 더 완성도 높은 게임을 만드는 개발자로 성장하는 밑거름이 되었으며 앞으로도 더욱 훌륭한 게임 프로그래머가 되기 위해 노력할 것입니다.
 
-## BIC 전시 사진
+
 <div class="bic-gallery" style="display:flex; gap: 1rem; flex-wrap: wrap;">
-  <img src="/assets/나.jpg" alt="BIC 전시 사진1" style="width: 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="/assets/카드.jpg" alt="BIC 전시 사진2" style="width: 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-  <img src="assets/" alt="BIC 전시 사진3" style="width: 30%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/assets/나.jpg" alt="BIC 전시 사진1" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/assets/나2.jpg" alt="BIC 전시 사진3" style="width: 70%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <img src="/assets/카드.jpg" alt="BIC 전시 사진2" style="width: 60%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">  
 </div>
 

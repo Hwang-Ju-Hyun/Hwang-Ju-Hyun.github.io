@@ -16,6 +16,14 @@ header_feature_image: /assets/img/header/me.jpg
 header_feature_image_responsive: true
 footer_text: ""
 
+
+collections:
+  projects:
+    output: true
+  coursework:
+    output: true
+
+
 # Blog
 excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
 post_navigation: true
