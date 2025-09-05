@@ -182,7 +182,7 @@ void Update()
 ---
 
 # 배운점
-- **Prefab** 시스템을 이해하려 하였고 그것을 활용한 **동적 오브젝트** 생성(폭탄, 폭탄 Fragmenet)<br>
+- **Prefab** 시스템을 학습하고 이해하였고 그것을 활용한 **동적 오브젝트** 생성(폭탄, 폭탄 Fragmenet)<br>
 - **Serializer 기법**을 학습하여 **JSON Serializer**를 이용해 **외부 데이터**에서 **오브젝트 정보**를 로드하고, ImGui를 통해 맵을 실시간으로 구성 및 편집
 - OpenGL과 같은 낮은 수준의 그래픽스 API를 사용해 게임을 구현하면서<br>
 조금만 개념을 잘못 이해하거나 흐름을 놓쳐도 쉽게 버그가 발생한다는 사실을 체감했습니다. 이 과정에서 각 시스템과 데이터 흐름을 꼼꼼하게 관리하고, 세밀한 디버깅과 검증이 얼마나 중요한지 깨달았고, 
@@ -200,39 +200,3 @@ void Update()
 - 그래서 프로그래밍은 단순히 기능을 구현하는 것이 아니라, **설계 의도와 구조**를 꼼꼼히 **기록**하며 관리해야 하는 작업임을 몸소 체험했습니다.
 
 ---
-
-# What a colorful post!
-
-This is an idea that came from [xukimseven/HardCandy-Jekyll](https://github.com/xukimseven/HardCandy-Jekyll) 
-looking at this cheerful and colorful theme, I wanted to enable something similar for Type-on-Strap.
-
-You can go fork and star _HardCandy-Jekyll_ too! 😉
-
-<!--more-->
-
-## How does it work?
-
-Basically you need to add just one thing, the color:
-
-```yml
----
-layout: post
-title: Color Post
-color: brown
----
-```
-
-It can either be a html color like `brown` (which look like red to me). Or with the rgb:
-
-```yml
----
-layout: post
-title: Color Post
-color: rgb(165,42,42)
----
-```
-
-The background used is `lineart.png` from [xukimseven](https://github.com/xukimseven) you can edit it in the config file. 
-If you want another one, put it in `/assets/img` as well. 
-
-> ⚠️ It's a bit hacking the css in the `post.html`
