@@ -3,7 +3,7 @@ baseurl: ""
 url: "https://Hwang-Ju-Hyun.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: 황주현이                                    # site's title
+title: 황주현                                   # site's title
 description: "A website with blog posts and pages"      # used by search engines
 avatar: /assets/img/me.jpg                         # Empty for no avatar in navbar
 favicon: /assets/favicon.ico                             # Icon displayed in the tab
