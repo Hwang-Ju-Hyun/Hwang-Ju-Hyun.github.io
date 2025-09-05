@@ -3,7 +3,7 @@ baseurl: ""
 url: "https://Hwang-Ju-Hyun.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: 황주현                                    # site's title
+title: 황주현이                                    # site's title
 description: "A website with blog posts and pages"      # used by search engines
 avatar: /assets/img/me.jpg                         # Empty for no avatar in navbar
 favicon: /assets/favicon.ico                             # Icon displayed in the tab
@@ -53,7 +53,7 @@ sass:
   style: compressed
   quiet_deps: true
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
-exclude: [".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*", "README.md", "SECURITY.md", "CHANGELOG.md", "docs/", ".github/"]
+exclude: ["rubygems-3.7.1", ".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*", "README.md", "SECURITY.md", "CHANGELOG.md", "docs/", ".github/"]
 
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
 remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
