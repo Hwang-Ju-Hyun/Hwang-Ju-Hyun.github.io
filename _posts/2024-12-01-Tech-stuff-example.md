@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Gonjiamerica
-color: rgb(250, 50, 50)
-feature-img: "assets/img/feature-img/g.jpeg"
+feature-img: "assets/img/thumbnails/feature-img/g.jpeg"
 thumbnail: "assets/img/thumbnails/feature-img/g.jpeg"
-tags: [Highlight, Markdown]
+badges:
+  - label: "Unreal Engine"
+    color: "#8A2BE2"  
 ---
+
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
     <h3>About</h3>

@@ -4,6 +4,11 @@ title: Wothingthing
 tags: [A Tag, Katex]
 feature-img: "assets/img/feature-img/wothingthing.png"
 thumbnail: "assets/img/thumbnails/feature-img/wothingthing.png"
+badges: 
+  - label: "Alpha Engine"
+    color: "#6E7BFF"   
+  - label: "JSON"
+    color: "#ff3e3e"
 excerpt_separator: <!--more-->
 ---
 
@@ -83,8 +88,10 @@ excerpt_separator: <!--more-->
 
 - 맵에 장애물 유무, 노드 간 연결 가능 여부, 이미 방문한 노드 여부 등을 조건으로 하여 DFS를 구성
 
+
 <div style="text-align: center; margin: 30px 0;">
-  <img src="/assets/boss.gif" alt="Pathfinding" style="max-width: 100%; border-radius: 8px;" />
+  <img src="/assets/boss.gif" alt="Pathfinding" 
+       style="width: 80%; max-width: 1000px; height: auto; border-radius: 8px;" />
   <p style="color: #aaa; font-size: 0.9em;">▲ 노드(노란색)를 통해 Pathfinding</p>
 </div>
 

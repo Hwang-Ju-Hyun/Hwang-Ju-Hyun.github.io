@@ -7,6 +7,15 @@ color: brown
 categories: Example
 feature-img: "assets/img/feature-img/bom.png"
 thumbnail: "assets/img/thumbnails/feature-img/bom.png"
+badges: 
+  - label: "OpenGL"
+    color: "#00BFFF" 
+  - label: "GLFW"
+    color: "#20B2AA" 
+  - label: "IMGUI"
+    color: "#00599C" 	
+  - label: "JSON"
+    color: "#ff3e3e"
 excerpt_separator: <!--more-->
 ---
 
@@ -46,6 +55,12 @@ excerpt_separator: <!--more-->
 
 ---
 
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/BOMB.gif" alt="Pathfinding" 
+       style="width: 80%; max-width: 1200px; height: auto; border-radius: 8px;" />
+  <p style="color: #aaa; font-size: 0.9em;"></p>
+</div>
+
 ## 주요 구현 내용
 ### 1. 게임 프레임워크 구축 
 오브젝트, 컴포넌트, 충돌 시스템 등 핵심 **구조 설계**
@@ -61,6 +76,14 @@ OpenGL을 활용한 2D 이미지 출력
 **ImGui**를 통해 직접 맵을 편집하며 게임 레벨을 제작
 
 ---
+
+
+<div style="text-align: center; margin: 30px 0;">
+  <img src="/assets/edit.gif" alt="Pathfinding" 
+       style="width: 80%; max-width: 1200px; height: auto; border-radius: 8px;" />
+  <p style="color: #aaa; font-size: 0.9em;">▲ 실시간 맵 편집</p>
+</div>
+
 
 # 어려웠던 점과 해결 방안
 ###  실시간 입력 처리와 동시 입력 문제
