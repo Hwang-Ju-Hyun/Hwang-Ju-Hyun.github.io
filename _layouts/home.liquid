@@ -60,9 +60,9 @@ layout: default
       <div class="card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
         <h3>Education & Experience</h3>
         <ul style="list-style: none; padding: 0; text-align: left;">
-          <li>2025.02 <br>부산 디지펜 아카데미 수료<br></li>
-          <li><br>2025.08 <br>BIC 전시작 출시<br></li>
-          <li><br>2026.02 <br>국립 부경대학교 컴퓨터공학<br>(졸업예정)</li>            
+		  <li>2026.02 <br>국립 부경대학교 컴퓨터공학<br>(졸업예정)</li>            
+          <li><br>2025.08 <br>BIC 전시작 출시<br></li>          		  
+          <li><br>2025.02 <br>부산 디지펜 아카데미 수료<br></li>          
         </ul>
       </div>
       <!-- Skills -->
@@ -78,67 +78,79 @@ layout: default
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="container" style="padding: 60px 20px;">
-    <h2 style="text-align:center; margin-bottom: 40px;">Projects</h2>
-    <div class="post-grid" style="
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      justify-content: center;
-    ">
-      {% for post in site.posts %}
-        <div class="post-card" style="
-          border: 1px solid #ddd;
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-          background: #1e1e1e;
-          color: #fff;
-          transition: transform 0.2s ease;
-        " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-          
-         <!-- 썸네일 이미지 + 라벨 -->
-{% if post.thumbnail %}
-<div style="position: relative; width:100%; height:300px; overflow:hidden;">
-  <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="width:100%; height:100%; object-fit:cover;">
+<section id="projects" class="container" style="padding: 60px 20px;">
+  <h2 style="text-align:center; margin-bottom: 40px;">Projects</h2>
+  <div class="post-grid" style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  ">
+    {% for post in site.posts %}
+      {% unless post.categories contains "coursework" %}
+        <div class="post-card" style="border:1px solid #ddd; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2); background:#1e1e1e; color:#fff;">
+          <!-- 썸네일 + 배지 -->
+          <div style="position:relative; width:100%; height:280px; overflow:hidden;">
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="width:100%; height:100%; object-fit:cover;">
+            {% if post.badges %}
+              <div style="position:absolute; bottom:10px; left:10px; display:flex; gap:6px;">
+                {% for badge in post.badges %}
+                  <span style="background-color: {{ badge.color }}; color:#fff; padding:4px 10px; border-radius:6px; font-size:0.8rem; font-weight:bold;">{{ badge.label }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
 
-  {% if post.badges %}
-  <div style="position: absolute; bottom: 10px; left: 10px; display: flex; gap: 8px;">
-    {% for badge in post.badges %}
-    <span style="
-      background-color: {{ badge.color }};
-      color: #fff;
-      font-size: 0.8rem;
-      font-weight: bold;
-      padding: 4px 10px;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      text-transform: uppercase;
-    ">{{ badge.label }}</span>
-    {% endfor %}
-  </div>
-  {% endif %}
-</div>
-{% endif %}
-
-          <!-- 글 내용 -->
-          <div style="padding: 20px;">
-            <h3 style="margin-top:0; font-size:1.5rem;">{{ post.title }}</h3>
-            <p style="font-size:0.9rem; color:#ccc;">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p style="font-size:1rem; line-height:1.4;">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-            <a href="{{ post.url | relative_url }}" style="
-              display:inline-block;
-              margin-top:10px;
-              padding:8px 16px;
-              background:#0077ff;
-              color:white;
-              border-radius:8px;
-              text-decoration:none;
-              font-size:0.9rem;
-            ">Read More</a>
+          <!-- 카드 내용 -->
+          <div style="padding:20px;">
+            <h3 style="font-size:1.3rem; margin-bottom:10px;">{{ post.title }}</h3>
+            <p style="font-size:0.9rem; color:#bbb;">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p style="font-size:1rem; line-height:1.5;">{{ post.excerpt | strip_html | truncate:140 }}</p>
+            <a href="{{ post.url | relative_url }}" style="display:inline-block; margin-top:10px; padding:8px 16px; background:#0077ff; color:white; border-radius:8px; text-decoration:none; font-size:0.9rem;">Read More</a>
           </div>
         </div>
-      {% endfor %}
-    </div>
-  </section>
+      {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Coursework -->
+<section id="coursework" class="container" style="padding: 60px 20px;">
+  <h2 style="text-align:center; margin-bottom: 40px;">Coursework</h2>
+  <div class="post-grid" style="
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  ">
+    {% for post in site.posts %}
+      {% if post.categories contains "coursework" %}
+        <div class="post-card" style="border:1px solid #ddd; border-radius:12px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.2); background:#1e1e1e; color:#fff;">
+          <!-- 썸네일 + 배지 -->
+          <div style="position:relative; width:100%; height:280px; overflow:hidden;">
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" style="width:100%; height:100%; object-fit:cover;">
+            {% if post.badges %}
+              <div style="position:absolute; bottom:10px; left:10px; display:flex; gap:6px;">
+                {% for badge in post.badges %}
+                  <span style="background-color: {{ badge.color }}; color:#fff; padding:4px 10px; border-radius:6px; font-size:0.8rem; font-weight:bold;">{{ badge.label }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+
+          <!-- 카드 내용 -->
+          <div style="padding:20px;">
+            <h3 style="font-size:1.3rem; margin-bottom:10px;">{{ post.title }}</h3>
+            <p style="font-size:0.9rem; color:#bbb;">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p style="font-size:1rem; line-height:1.5;">{{ post.excerpt | strip_html | truncate:140 }}</p>
+            <a href="{{ post.url | relative_url }}" style="display:inline-block; margin-top:10px; padding:8px 16px; background:#28a745; color:white; border-radius:8px; text-decoration:none; font-size:0.9rem;">Read More</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+
+
 </div>
