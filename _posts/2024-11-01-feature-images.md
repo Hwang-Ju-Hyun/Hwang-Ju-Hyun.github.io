@@ -15,7 +15,7 @@ categories: coursework
 
 ---
 
-## Introduction
+## 소개
 이 프로젝트에서는 OpenGL을 활용하여 **3D Normal Mapping**을 구현했습니다.
 **VAO(Vertex Array Object)**와 **VBO(Vertex Buffer Object)**를 사용하여 3D 오브젝트를 구성하고, 정점 데이터와 텍스처 좌표, 노멀 벡터를 GPU에 전달했습니다.
 셰이더를 통해 Normal Map을 적용하여 평면 텍스처만으로도 입체적인 조명 효과를 구현했고, **조명 계산(Phong shading)**과 **Tangent Space** 계산을 통해 표면의 세부 굴곡까지 사실적으로 표현할 수 있었습니다.
