@@ -4,21 +4,7 @@ layout: default
 
 <div class="home">
   <style scoped>
-    {% assign image = site.header_feature_image | relative_url | split: '.' %}
-    .call-out_img {
-      background-image: url('{{ image | join: '.' }}');
-      text-align: center;
-      height: 80vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-size: contain;
-      background-position: 45% center;
-      background-repeat: no-repeat;
-      background-color: #000;
-    }
+    
     @media screen and (max-width: 768px) {
       .call-out_img {
         background-image: url('{{ image[0] | append: "-medium." | append: image[1] | default: image }}');
@@ -55,9 +41,9 @@ layout: default
           <li><br><b>Email:</b> hyunhwang091@naver.com</li>          
         </ul>
       </div>
-      <!-- Education & Experience -->
+      <!-- Education-->
       <div class="card" style="border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-        <h3>Education & Experience</h3>
+        <h3>Education</h3>
         <ul style="list-style: none; padding: 0; text-align: left;">
 		  <li>2026.02 <br>국립 부경대학교 컴퓨터공학<br>(졸업예정)</li>            
           <li><br>2025.08 <br>BIC 전시작 출시<br></li>          		  

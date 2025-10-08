@@ -41,13 +41,6 @@ excerpt_separator: <!--more-->
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
 
----
-
-## 소개
-이 프로젝트는 **Alpha Engine(렌더링 툴)**을 사용하여 3명의 프로그래머로 구성되어 개발한 **2D 횡스크롤**게임입니다.
-제가 미리 기초적인 GameFrameWork를 구성해놓은 상태에서 나머지 2명의 프로그래머들이 각자의 역할을 담당하며 프로젝트에 임하였습니다.
-처음 게임 프로그래밍에서의 현업이였어서 많은 시행착오도 있었지만 동시에 현업할때에서의 소통의 중요성과 좋은 팀워크가 프로젝트에 얼마나 큰 영향을 미치는지 알게되었습니다.
-
 
 ---
 

@@ -48,13 +48,6 @@ excerpt_separator: <!--more-->
 
 ---
 
-## 소개
-이 프로젝트는 **OpenGL**을 사용하여 개발한 **2D TopDown**게임 입니다.   
-처음으로 그래픽스 API를 직접 다루며 게임을 구현하는 과정에서, **렌더링 파이프라인**과 <br>게임 시스템을 엔진 없이 직접 설계하고 구현했습니다.<br>
-이를 통해 **기초 그래픽스 원리 이해**, **게임 로직 구조화**, **문제 해결 능력**을 한 단계 끌어올리는 값진 경험을 얻었습니다.
-
----
-
 <div style="text-align: center; margin: 30px 0;">
   <img src="/assets/BOMB.gif" alt="Pathfinding" 
        style="width: 80%; max-width: 1200px; height: auto; border-radius: 8px;" />
