@@ -5,7 +5,9 @@ feature-img: "assets/img/thumbnails/feature-img/g.jpeg"
 thumbnail: "assets/img/thumbnails/feature-img/g.jpeg"
 badges:
   - label: "Unreal Engine"
-    color: "#8A2BE2"  
+    color: "#8A2BE2"
+  - label: "BIC 전시작 출시"
+    color: "#FF4500"  
 ---
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
