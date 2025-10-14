@@ -4,7 +4,21 @@ layout: default
 
 <div class="home">
   <style scoped>
-    
+     {% assign image = site.header_feature_image | relative_url | split: '.' %}
+    .call-out_img {
+      background-image: url('{{ image | join: '.' }}');
+      text-align: center;
+      height: 60vh; /* 전체 화면보다 작게 */
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover; /* 이미지는 꽉 채움 */
+      background-position: center center; /* 중앙 기준 */
+      background-repeat: no-repeat;
+      background-color: #000;
+    }
     @media screen and (max-width: 768px) {
       .call-out_img {
         background-image: url('{{ image[0] | append: "-medium." | append: image[1] | default: image }}');
