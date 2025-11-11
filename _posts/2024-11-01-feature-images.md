@@ -36,10 +36,6 @@ Normal Map 텍스처를 셰이더에 바인딩
 **Phong shading** 기반 조명 계산 적용
 **Tangent Space**에서 Normal Map을 변환하여 조명 방향에 맞게 처리
 
-### 4. 실시간 렌더링 최적화
-GPU에서 데이터 처리하도록 버퍼와 셰이더 활용
-불필요한 연산 최소화 및 프레임 유지
-
 ---
 
 <iframe width="960" height="515" src="https://www.youtube.com/embed/CbCPShVyAdw" 
