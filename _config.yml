@@ -12,7 +12,7 @@ favicon: /assets/favicon.ico                             # Icon displayed in the
 header_text: "Portfolio"
 header_subtitle: "황주현"
 header_intro: ""
-header_feature_image: /assets/img/header/code.png
+header_feature_image: /assets/img/header/code2.png
 header_feature_image_responsive: true
 footer_text: ""
 
