@@ -1,0 +1,58 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://Hwang-Ju-Hyun.github.io"
+
+# THEME-SPECIFIC CONFIGURATION
+title: 황주현                                   # site's title
+description: "A website with blog posts and pages"      # used by search engines
+avatar: /assets/img/me2.jpg                        # Empty for no avatar in navbar
+favicon: /assets/favicon.ico                             # Icon displayed in the tab
+
+# Header and footer text
+header_text: "Portfolio"
+header_subtitle: "황주현"
+header_intro: ""
+header_feature_image: /assets/img/header/code2.png
+header_feature_image_responsive: true
+footer_text: ""
+
+
+collections:
+  projects:
+    output: true
+  coursework:
+    output: true
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+
+
+# Blog
+excerpt: true                                           # Or "truncate" (first 250 characters), "false" to disable
+post_navigation: true
+color_image: /assets/img/lineart.png                    # A bit transparent for color posts.
+
+# Features
+# More in the _data folder for comments, share buttons, author and language
+# For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
+katex: true                                             # Enable if using math markup
+mermaid: default                                        # Enable mermaid-js for diagrams, use theme: base, forest, dark, default, neutral
+google_analytics:                                       # Measurement ID, e.g. "G-00000"
+cookie_consent: false                                   # To respect the usage of cookies
+color_theme: dark                                       # auto, dark or light
+
+# PAGINATION
+paginate: 5
+paginate_path: "/blog/page:num"
+
+
+
+# BUILD SETTINGS
+sass:
+  style: compressed
+  quiet_deps: true
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-feed]
+exclude: ["rubygems-3.7.1", ".jekyll-cache", ".jekyll-metadata", ".idea", "vendor/*", "assets/node_modules/*", "README.md", "SECURITY.md", "CHANGELOG.md", "docs/", ".github/"]
+
+# theme: type-on-strap                                  # if using the theme as a jekyll theme gem
+remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
