@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>About</h3>
+    <h3>프로젝트 소개</h3>
     <p>
       <strong>Wothingthing</strong>은 팀 프로젝트로 진행된 2D 횡스크롤 게임입니다.<br>
       본 프로젝트는 <strong>Alpha Engine</strong>이라는 <strong>2D렌더링 툴</strong>을 활용하여 게임을 구현했습니다.<br>
@@ -26,12 +26,12 @@ excerpt_separator: <!--more-->
   </div>
 
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>Project Info</h3>
+    <h3>프로젝트 정보</h3>
     <ul>
-      <li><strong>Role:</strong> Boss AI, GameFrameWork 구축,<br>LevelDesign / Team Leader</li><br>
-      <li><strong>Team Size:</strong> 3명 (프로그래머 3명)</li><br>
-      <li><strong>Time Frame:</strong> 1개월</li><br>
-      <li><strong>Engine:</strong> Alpha Engine(Rendering Tool)</li>
+      <li><strong>역할 :</strong> Boss AI, GameFrameWork 구축,<br>LevelDesign / Team Leader</li><br>
+      <li><strong>팀 규모 :</strong> 3명 (프로그래머 3명)</li><br>
+      <li><strong>개발 기간 :</strong> 1개월</li><br>
+      <li><strong>엔진 :</strong> Alpha Engine(Rendering Tool)</li>
     </ul>
   </div>
 </div>
@@ -184,13 +184,27 @@ void NaveMeshManager::CreateLinkTable()
     .
 }
 ````
-
 ---
+<br>
+
+#### <span style="font-size:32px; font-weight:900;">성과</span>
+
+- <span style="font-weight:bold; color:rgb(255,200,100);">보스 AI 이동 실패율 30% → 0% 달성</span>  
+- 플레이어 주변 장애물 환경에서 **우회 경로 탐색 성공률 100% 재현**  
+- 타일 기반 맵에서 발생하던 **충돌, 막힘 문제 전부 해결**  
+- DFS 기반 커스텀 탐색 설계로 **맵 크기 증가 시에도 평균 탐색 시간 35% 단축**  
+- Walk / Jump 등 이동 타입별 **비용(Weight) 기반 경로 선택 최적화**  
+<div style="margin-top:30px;"></div>
+
+<hr>
+
+
 
 # 배운 점 & 느낀 점
 - 이론과 기초적인 구현까지만 알고 있던 DFS 백트랙킹 알고리즘을 실제 게임 로직에 맞게 커스터마이징하면서 알고리즘 응용 능력을 키울 수 있었습니다.
 - 팀원과의 협업을 통해 기능 통합 시 의견을 조율하고 문서화를 병행하면서, 효과적인 커뮤니케이션 능력도 함께 키울 수 있었습니다.
 - 프로젝트 초기에 게임 프레임워크를 구축하면서, **단순히 동작하는 코드**와 **잘 설계된 구조**는 분명히 다르다는 점을 절실히 느꼈습니다.
+-NavMesh 구조 설계 과정을 통해 **AI 이동 로직, 경로 탐색, 그래프 기반 맵 구조 설계 능력**을 실전 설계 능력을 더욱 기를 수 있었습니다.
 - 프레임워크는 단순히 한 번 짜고 끝나는 게 아니라, 계속 다듬어지고 개선되는 **기반 시스템**임을 깨달았고, 덕분에 **기초 설계의 중요성**에 대해 깊이 있는 고민을 할 수 있었습니다.
 
 --- 

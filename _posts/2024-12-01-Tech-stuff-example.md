@@ -12,10 +12,10 @@ badges:
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>About</h3>
+    <h3>프로젝트 소개</h3>
     <p>
       <strong>Gonjiamerica</strong>는 팀 프로젝트로 진행된 1인칭 공포 FPS 게임입니다.<br>
-      본 프로젝트를 통해 처음으로 <strong>언리얼 엔진</strong>을 접했고, 
+      본 프로젝트를 통해 처음으로 <strong>언리얼 엔진</strong>을 접했고
       <strong>블루프린트</strong>를 활용하여 게임을 구현했습니다.<br>
       이 경험을 통해 게임 엔진의 작동 원리와, AI/애니메이션/내비게이션 같은 핵심 시스템을 직접 설계하고 응용할 수 있었습니다.<br>
       비록 처음 다뤄보는 엔진이었지만, 빠른 학습과 적용을 통해 
@@ -24,12 +24,12 @@ badges:
   </div>
 
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>Project Info</h3>
+    <h3>프로젝트 정보</h3>
     <ul>
-      <li><strong>Role:</strong> AI & Gameplay Programmer / Team Leader</li>
-      <li><strong>Team Size:</strong> 3명 (프로그래머 3명)</li>
-      <li><strong>Time Frame:</strong> 3개월</li>
-      <li><strong>Engine:</strong> Unreal Engine (Blueprint)</li>
+      <li><strong>팀 역할 :</strong> AI & Gameplay Programmer / Team Leader</li><br>
+      <li><strong>팀 규모 :</strong> 3명 (프로그래머 3명)</li><br>
+      <li><strong>개발 기간 :</strong> 3개월</li><br>
+      <li><strong>엔진 :</strong> Unreal Engine (Blueprint)</li>
     </ul>
   </div>
 </div>
@@ -83,13 +83,13 @@ BT는 FSM에 비해 다음과 같은 장점을 가집니다:
 애니메이션 구현 과정에서 가장 어려웠던 부분은 **애니메이션 몽타주(Animation Montage)**의 활용이었습니다.  
 몽타주는 특정 상황(예: 공격, 피격, 리로드 등)에서 애니메이션 블루프린트의 일반 상태 머신(State Machine)을 **일시적으로 덮어쓰고 우선 실행되는 시퀀스 애니메이션**입니다.
 
-프로젝트 초반에는 이 개념을 제대로 이해하지 못해 다음과 같은 문제가 발생했습니다:
+프로젝트 초반에는 이 개념을 제대로 이해하지 못해 다음과 같은 문제가 발생했습니다.
 
 - 공격 도중 이동 애니메이션이 끊김  
 - 피격 모션이 끝나기 전에 상태 전환 발생  
 - 불필요한 애니메이션 충돌 빈번  
 
-이를 해결하기 위해 다음과 같은 접근을 시도했습니다:
+이를 해결하기 위해 다음과 같은 접근을 시도했습니다.
 
 **1. 분석**  
 - 몽타주가 **State Machine과 어떻게 상호작용**하는지 엔진 문서등을 통해 구조적으로 파악  

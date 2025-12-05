@@ -21,7 +21,7 @@ excerpt_separator: <!--more-->
 
 <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>About</h3>
+    <h3>프로젝트 소개</h3>
     <p>
       <strong>MyBomberMan</strong>은 솔로 프로젝트로 진행된 2D TopDown 게임입니다.<br>
       본 프로젝트는 <strong>OpenGL</strong> 그래픽스 API만을 활용하여 게임을 구현했습니다.<br>
@@ -33,13 +33,13 @@ excerpt_separator: <!--more-->
   </div>
 
   <div style="flex: 1; min-width: 250px; border: 1px solid #444; border-radius: 8px; padding: 15px; background-color: #1c1c1c; color: #fff;">
-    <h3>Project Info</h3>
+    <h3>프로젝트 정보</h3>
     <ul>
-      <li><strong>Role:</strong> Programmer</li><br>
-      <li><strong>Team Size:</strong> 1명 </li><br>
-      <li><strong>Time Frame:</strong> 1개월</li><br>
-      <li><strong>Engine:</strong> Custom Engine</li><br>
-      <li><strong>Tools & Libraries:</strong><br>
+      <li><strong>역할 :</strong> Programmer</li><br>
+      <li><strong>팀 규모 :</strong> 1명 </li><br>
+      <li><strong>개발 기간 :</strong> 1개월</li><br>
+      <li><strong>엔진 :</strong> 자체엔진</li><br>
+      <li><strong>사용 기술 & 스택 :</strong><br>
 	  - ImGUI<br>
 	  - OpenGL (렌더링)</li>
     </ul>
@@ -196,6 +196,13 @@ void Update()
     }
 }
 ````
+#### <span style="font-size:32px; font-weight:900;">성과 및 배운 점</span>
+
+- <span style="font-weight:bold; color:rgb(255,200,100);">동시 입력 처리 오류율 30% → 0%로 개선</span>  
+- 키 입력 상황에서 발생하던 **오작동/키 무시 현상 100% 해결**  
+- **해쉬테이블(unordered_map)** 기반 통합 입력 관리로 **신규 키 추가 시 코드 수정량 90% 감소**  
+- Update 단계에서 Press/Hold/Release 자동 계산 → **중복 switch/case 제거로 입력 처리 코드량 약 40% 축소**  
+- 맵 에디터 + JSON Serializer 구축 후  **레벨 제작·수정 시간이 약 70% 단축**  
 
 ---
 
