@@ -9,7 +9,7 @@ position: 4
 ---
 <!-- PDF 다운로드 버튼 -->
   <div style="margin-top: 20px;">
-    <a href="/assets/황주현_이력서.pdf" download class="btn" style="padding: 10px 20px; background: #007acc; color: white; border-radius: 5px; text-decoration: none;">
+    <a href="/assets/이력서_황주현.pdf" download class="btn" style="padding: 10px 20px; background: #007acc; color: white; border-radius: 5px; text-decoration: none;">
         PDF 다운로드
     </a>
   </div>
